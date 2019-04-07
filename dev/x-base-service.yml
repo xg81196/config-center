@@ -1,4 +1,4 @@
-﻿spring:
+spring:
   application:
     name: ${server.name.base}
 server:
@@ -7,3 +7,29 @@ server:
 feign:
   hystrix:
     enabled: true
+
+logging:
+    level:
+        com:
+            example:
+                booksystem:
+                    repository:
+                        BookInfoMapper: TRACE
+server:
+    tomcat:
+        uri-encoding: UTF-8
+spring:
+    datasource:
+        sql-script-encoding: UTF-8
+    http:
+        encoding:
+            charset: UTF-8
+            enabled: true
+mybatis:
+    mapperLocations: classpath*:/mappers/*.xml
+spring:
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        password: 12345
+        url: jdbc:mysql://localhost:3306/test?useSSL=true
+        username: test
