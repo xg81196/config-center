@@ -24,10 +24,12 @@ feign:
 logging:
   level:
     com:
-      example:
-        booksystem:
-          repository:
-            BookInfoMapper: TRACE
+    itgo:
+        service:
+            base:
+                realize:
+                    mapper: DEBUG
+
 
 mybatis:
   mapperLocations: classpath*:/mappers/*.xml
