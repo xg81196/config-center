@@ -1,4 +1,5 @@
-﻿# 注册中心
+﻿
+# 注册中心
 eureka:
   #  server:
   #    enable-self-preservation: false  #自我保护机制 (不推荐关闭)
@@ -13,7 +14,9 @@ eureka:
 server:
   name:
     base: base-service
-    eureka: eureka-service
+    eureka1: eureka1-service
+    eureka2: eureka2-service
+    eureka3: eureka3-service
     web: web-service
   port:
     base: 16001
@@ -21,6 +24,3 @@ server:
     eureka2: 12002
     eureka3: 12003
     web: 10183
-eureka:
-  server:
-    uri: http://localhost:${server.port.eureka1}/eureka/
