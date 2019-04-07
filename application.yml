@@ -13,5 +13,9 @@ eureka:
 server:
   name:
     base: base-service
+    eureka: eureka-server
   port:
     base: 16001
+    eureka1: 12001
+    eureka2: 12002
+    eureka3: 12003
