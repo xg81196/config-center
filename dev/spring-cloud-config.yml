@@ -1,5 +1,0 @@
-service:
-  name:
-    base: base-service
-test:
-  foo: 10    
