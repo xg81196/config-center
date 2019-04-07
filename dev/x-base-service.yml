@@ -1,4 +1,6 @@
-﻿spring:
+﻿test:
+  foo: "xigexb"
+spring:
   profiles:
     active:
       - dev
