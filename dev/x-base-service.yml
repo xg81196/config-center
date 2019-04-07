@@ -22,13 +22,13 @@ feign:
     enabled: true
 
 logging:
-  level:
-    com:
-    itgo:
-        service:
-            base:
-                realize:
-                    mapper: DEBUG
+    level:
+        com:
+            itgo:
+                service:
+                    base:
+                        realize:
+                            mapper: TRACE
 
 
 mybatis:
