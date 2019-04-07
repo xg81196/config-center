@@ -1,9 +1,8 @@
-﻿server:
-  port: 16001
-
-spring:
+﻿spring:
   application:
-    name: base-service
+    name: ${server.name.base}
+server:
+  port: ${server.port.base}
 
 feign:
   hystrix:

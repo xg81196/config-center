@@ -1,8 +1,4 @@
-﻿spring:
-  profiles:
-    active:
-      - dev
-
+﻿# 注册中心
 eureka:
   #  server:
   #    enable-self-preservation: false  #自我保护机制 (不推荐关闭)
@@ -13,3 +9,9 @@ eureka:
   instance:
     instance-id: ${spring.application.name}-${server.port} #更改主机显示名称
     prefer-ip-address: true #显示IP
+
+server:
+  name:
+    base: base-service
+  port:
+    base: 16001
