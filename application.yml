@@ -17,4 +17,4 @@ server:
     web: web-service
   port:
     base: 16001
-    web: 10183
+    web: 18001
