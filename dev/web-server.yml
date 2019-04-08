@@ -1,5 +1,7 @@
 spring:
   application:
     name: ${server.name.web}
+  main:
+    allow-bean-definition-overriding: true
 server:
   port: ${server.port.web}
